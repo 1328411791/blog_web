@@ -12,7 +12,7 @@
 </template>
 
 <script>
-import axios from "axios"
+//import axios from "axios"
 export default {
   data() {
     return {
@@ -25,6 +25,7 @@ export default {
   methods: {
       onClick(){
         console.log(this.form.password+this.form.username)
+        /*
         axios.post('/users/login', {
           username:this.form.username,
           password:this.form.password
@@ -38,7 +39,9 @@ export default {
             .then(function () {
               // 总是会执行
             });
+            */
       }
+
   }
 }
 </script>
