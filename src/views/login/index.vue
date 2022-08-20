@@ -1,15 +1,17 @@
 <!-- eslint-disable vue/multi-word-component-names -->
 <template>
+  <div>
   <h3 class="login-text">登录</h3>
-  <el-form :model="form" label-width="120px">
-    <el-form-item label="username">
-      <el-input v-model="form.username" />
-    </el-form-item>
-    <el-form-item label="password">
-      <el-input v-model="form.password" />
-    </el-form-item>
-    <el-button type="primary" @click="onClick()">Primary</el-button>
-  </el-form>
+    <el-form :model="form" label-width="120px">
+      <el-form-item label="username">
+        <el-input v-model="form.username" />
+      </el-form-item>
+      <el-form-item label="password">
+        <el-input v-model="form.password" />
+      </el-form-item>
+      <el-button type="primary" @click="onClick()">Primary</el-button>
+    </el-form>
+  </div>
 </template>
 
 <script>
