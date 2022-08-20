@@ -1,5 +1,6 @@
 <!-- eslint-disable vue/multi-word-component-names -->
 <template>
+  <h3 class="login-text">登录</h3>
   <el-form :model="form" label-width="120px">
     <el-form-item label="username">
       <el-input v-model="form.username" />
@@ -12,7 +13,7 @@
 </template>
 
 <script>
-//import axios from "axios"
+import axios from "axios"
 export default {
   data() {
     return {
@@ -25,7 +26,7 @@ export default {
   methods: {
       onClick(){
         console.log(this.form.password+this.form.username)
-        /*
+
         axios.post('/users/login', {
           username:this.form.username,
           password:this.form.password
@@ -39,7 +40,6 @@ export default {
             .then(function () {
               // 总是会执行
             });
-            */
       }
 
   }
@@ -47,9 +47,8 @@ export default {
 </script>
 
 <style scoped>
+.login-text{
 
-
-
-
+}
 
 </style>
